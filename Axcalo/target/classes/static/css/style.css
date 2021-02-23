@@ -1,0 +1,25 @@
+* {
+	background-color: #F0F8FF;
+}
+
+#root {
+	margin-top: 16px;
+}
+
+#output {
+	width: 50%;
+	border: solid 1px black;
+}
+
+.gray_element {
+	background-color: #f8f8f8;
+}
+
+input[type = 'text'] {
+	width: 50%;
+	height: 32px;
+}
+
+select {
+	width: 10%;
+}

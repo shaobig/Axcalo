@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th = "https://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>ПОЕХАЛИ!</title>
+		
+		<link rel = "stylesheet" th:href = "@{/css/style.css}">
+	</head>
+	<body>
+		<div id = "root">
+			<div id = "title">
+				<H1><i>THE SHIZ PROJECT</i></H1>
+			</div>
+			<div id = "center">
+				<form method = "get">
+					<p>
+						<input class = "gray_element" name = "input" type = "text" placeholder = "Введите текст:" th:value = "${input}"> <br>
+					</p>
+					<p> Выберите язык: </p>
+					<p>
+						<select class = "gray_element" name = "language" required>
+							<option value = "esdope">Esdope</option>
+							<option value = "icezhe">Icezhe</option>
+							<option value = "othxiak">Othxiak</option>
+						</select>
+					</p>
+					<p>
+						<input class = "gray_element" type = "submit" value = "Перевести"> <br>
+					</p>
+				</form>
+			</div>
+			<div id = "output" class = "gray_element">
+				<p class = "gray_element" th:text = "${output}"></p>
+			</div>
+		</div>
+	</body>
+</html>
